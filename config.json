@@ -1,0 +1,20 @@
+{
+    "name": "SensorStats mit AppDaemon",
+    "version": "1.0.0",
+    "slug": "sensorstats_appdaemon",
+    "description": "AppDaemon Add-on zur Sensoranalyse (Top State Changes etc.)",
+    "startup": "application",
+    "boot": "auto",
+    "host_network": true,
+    "homeassistant_api": true,
+    "auth_api": true,
+    "hassio_api": true,
+    "options": {},
+    "schema": {},
+    "image": "local/sensorstats-appdaemon",
+    "init": false,
+    "privileged": ["NET_ADMIN"],
+    "ports": {
+    "5050/tcp": 5050
+    }
+}
